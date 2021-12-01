@@ -4,4 +4,4 @@ ADD node_modules.tar.gz ./
 COPY package*.json ./
 COPY . ./
 EXPOSE 3000
-CMD npm start
+CMD ["npm", "start"]
