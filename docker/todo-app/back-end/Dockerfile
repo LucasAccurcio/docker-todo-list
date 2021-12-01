@@ -5,4 +5,4 @@ COPY package*.json ./
 RUN npm install
 COPY . .
 EXPOSE 3001
-ENTRYPOINT npm -d start
+ENTRYPOINT ["npm", "-d", "start"]
