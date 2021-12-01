@@ -1,6 +1,8 @@
 FROM node:14-alpine
-EXPOSE 3001
-ADD node_modules.tar.gz .
-COPY . .
+WORKDIR /todo-app/front-end
+ADD node_modules.tar.gz ./
+COPY package*.json ./
 RUN npm install
-RUN npm start
+COPY . .
+EXPOSE 3001
+CMD [ "npm", "start" ]
