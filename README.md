@@ -58,4 +58,4 @@ Neste projeto, você será capaz de:
   O docker compose ficará rodando os testes e requisições para o back-end.
 
   Para visualizar a aplicação, basta acessar no seu navegador o endereço:
-  - [localhost:3000](http://localhost:3000) 
+  - [http://localhost:3000](http://localhost:3000) 
