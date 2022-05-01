@@ -1,16 +1,6 @@
-- [Trybe Todo-App 🖥️ 📝](#trybe-todo-app-️-)
-  - [Requisitos](#requisitos)
-  - [Instalação](#instalação)
-    - [Estrutura do aplicativo](#estrutura-do-aplicativo)
-    - [Com quem devo me preocupar primeiro?](#com-quem-devo-me-preocupar-primeiro)
-      - [Instalando o back-end](#instalando-o-back-end)
-      - [Instalando o front-end](#instalando-o-front-end)
-      - [Utilizando o aplicativo de testes](#utilizando-o-aplicativo-de-testes)
-      - [Dicas sobre a conteinerização de aplicações NodeJS](#dicas-sobre-a-conteinerização-de-aplicações-nodejs)
-      - [Aproveitando os arquivos `node_modules.tar.gz`](#aproveitando-os-arquivos-node_modulestargz)
 ### Trybe Todo-App 🖥️ 📝
 
-Olá! Esse é o aplicativo de tarefas **Trybe Todo-App**!
+Esse é o aplicativo de tarefas **Trybe Todo-App**!
 
 Com ele, você pode se organizar de maneira simples, adicionando, marcando e/ou removendo suas tarefas.
 
@@ -32,74 +22,6 @@ Esse é um aplicativo em [NodeJS](https://nodejs.org/pt-br/about/), que possui *
 - `Back-end` Onde a **mágica** acontece! Nosso back-end possui um banco de dados interno, onde são salvas nossas tarefas;
 - `Testes` Onde validamos a comunicação entre `front` e `back-end`.
 
-##### Estrutura do aplicativo
-
-```bash
-todo-app/
-├── README.md # este arquivo
-├── intro.gif # demonstração
-├── back-end # responsável por processar nossos dados através de requisições
-│   ├── node_modules.tar.gz # pacote opcional, para facilitar a criação de imagens no Docker
-│   ├── package.json # principal componente da aplicação
-│   ├── package-lock.json # arquivo responsável por otimizar a instalação em outros ambientes
-│   └── src
-│       ├── api
-│       │   ├── routes.js
-│       │   └── server.js
-│       ├── controllers
-│       │   └── Tasks.js
-│       ├── database
-│       │   ├── tasks.bkp.json
-│       │   └── tasks.json
-│       ├── models
-│       │   └── Tasks.js
-│       └── utils
-│           └── fileHandler.js
-├── front-end # responsável por ser uma interface amigável para nosso back-end
-│   ├── node_modules.tar.gz # pacote opcional, para facilitar a criação de imagens no Docker
-│   ├── package.json # principal componente da aplicação
-│   ├── package-lock.json # arquivo responsável por otimizar a instalação em outros ambientes
-│   ├── public
-│   │   ├── favicon.ico
-│   │   ├── index.html
-│   │   ├── logo192.png
-│   │   ├── logo512.png
-│   │   ├── manifest.json
-│   │   └── robots.txt
-│   ├── README.md
-│   └── src
-│       ├── App.css
-│       ├── App.js
-│       ├── App.test.js
-│       ├── components
-│       │   ├── ItemAdd
-│       │   │   ├── index.jsx
-│       │   │   └── styles.css
-│       │   ├── ItemList
-│       │   │   ├── index.jsx
-│       │   │   └── styles.css
-│       │   ├── ItemRow
-│       │   │   ├── index.jsx
-│       │   │   └── styles.css
-│       │   └── TaskReset
-│       │       └── index.jsx
-│       ├── context
-│       │   └── taskContext.js
-│       ├── index.css
-│       ├── index.js
-│       ├── logo.png
-│       ├── reportWebVitals.js
-│       ├── setupTests.js
-│       └── utils
-│           └── fetch.js
-└── tests # responsável por validar essa comunicação
-    ├── e2e
-    │   └── health_status.test.js
-    ├── jest.config.js
-    ├── node_modules.tar.gz # pacote opcional, para facilitar a criação de imagens no Docker
-    ├── package.json # principal componente da aplicação
-    └── package-lock.json # arquivo responsável por otimizar a instalação em outros ambientes
-```
 
 ##### Com quem devo me preocupar primeiro?
 
